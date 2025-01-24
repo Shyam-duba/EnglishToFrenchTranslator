@@ -1,6 +1,8 @@
 import streamlit as st
 from transformers import pipeline
 
+st.title("English To French Translator")
+
 pipe = pipeline("text2text-generation", model="Shyam-duba/my_awesome_opus_books_model")
 
 @st.cache_data
